@@ -16,7 +16,8 @@ UniHub is a web-based platform designed to help university students discover clu
 - HTML5
 - CSS3
 - JavaScript
-
+- Python
+- Firefox database
 ## Project Goal
 The main goal of UniHub is to encourage students to engage in university life by making clubs and events easily accessible through one platform.
 
@@ -36,13 +37,13 @@ The main goal of UniHub is to encourage students to engage in university life by
 └── README.md
 ```
 
-> **Note:** Update the project structure if your file names are different.
 
 ## Team Members
-- Member 1
-- Member 2
-- Member 3
-- Member 4
+- Rama Alshaikh_Yousef
+- Roaa Aljundi
+- Mayar Tashatshah
+- Shahed Almomani
+- Najat Alshwaiat
 
 ## Future Improvements
 - User registration
@@ -53,3 +54,7 @@ The main goal of UniHub is to encourage students to engage in university life by
 
 ## License
 This project was developed for educational purposes.
+## click here to open our project
+## Repository
+
+[View the Project on GitHub](https://github.com/username/UniHub)
