@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UniHub | Events</title>
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+
+body{
+
+background:#f5f7fb;
+
+}
+
+
+
+/* Navbar */
+
+header{
+
+height:70px;
+
+background:#1e3a8a;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:0 50px;
+
+color:white;
+
+}
+
+
+.logo{
+
+font-size:28px;
+
+font-weight:bold;
+
+}
+
+
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin-left:25px;
+
+font-size:17px;
+
+}
+
+
+nav a:hover{
+
+color:#ffd54f;
+
+}
+
+
+
+/* Back Button */
+
+.back{
+
+padding:25px 60px;
+
+}
+
+
+.back a{
+
+background:#1e3a8a;
+
+color:white;
+
+padding:10px 20px;
+
+border-radius:20px;
+
+text-decoration:none;
+
+}
+
+
+
+/* Hero */
+
+
+.hero{
+
+height:280px;
+
+background:
+linear-gradient(
+rgba(30,58,138,.8),
+rgba(30,58,138,.8)
+);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+
+.hero p{
+
+margin-top:10px;
+
+font-size:18px;
+
+}
+
+
+
+
+/* Events */
+
+
+.container{
+
+padding:50px 70px;
+
+}
+
+
+.title{
+
+text-align:center;
+
+font-size:32px;
+
+color:#1e3a8a;
+
+margin-bottom:40px;
+
+}
+
+
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(270px,1fr));
+
+gap:30px;
+
+}
+
+
+
+.card{
+
+background:white;
+
+border-radius:15px;
+
+padding:25px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+
+.icon{
+
+height:100px;
+
+background:#1e3a8a;
+
+color:white;
+
+border-radius:15px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:45px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.card h3{
+
+color:#1e3a8a;
+
+margin-bottom:15px;
+
+}
+
+
+
+.card p{
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+
+
+button{
+
+margin-top:15px;
+
+width:100%;
+
+padding:12px;
+
+border:none;
+
+border-radius:20px;
+
+background:#1e3a8a;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+
+
+button:hover{
+
+background:#14265c;
+
+}
+
+
+
+
+/* Footer */
+
+
+footer{
+
+background:#1e3a8a;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+margin-top:40px;
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="logo">
+
+UniHub
+
+</div>
+
+
+<nav>
+
+<a href="home.html">Home</a>
+
+<a href="clubs.html">Clubs</a>
+
+<a href="events.html">Events</a>
+
+<a href="profile.html">Profile</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+<div class="back">
+
+<a href="home.html">
+
+← Back to Home
+
+</a>
+
+</div>
+
+
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+<h1>
+
+University Events
+
+</h1>
+
+
+<p>
+
+Discover workshops, competitions and student activities
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="container">
+
+
+<h2 class="title">
+
+Upcoming Events
+
+</h2>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+
+<div class="icon">
+
+🤖
+
+</div>
+
+
+<h3>
+
+AI Workshop
+
+</h3>
+
+
+<p>
+
+<b>Date:</b> 20 July 2026
+
+<br>
+
+<b>Time:</b> 2:00 PM
+
+<br>
+
+<b>Location:</b> Computer Lab 3
+
+<br>
+
+<b>Organizer:</b> AI Club
+
+</p>
+
+
+<button>
+
+Register
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<div class="icon">
+
+💻
+
+</div>
+
+
+<h3>
+
+Programming Contest
+
+</h3>
+
+
+<p>
+
+<b>Date:</b> 28 July 2026
+
+<br>
+
+<b>Time:</b> 10:00 AM
+
+<br>
+
+<b>Location:</b> IT Building
+
+<br>
+
+<b>Organizer:</b> Programming Club
+
+</p>
+
+
+<button>
+
+Register
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<div class="icon">
+
+💡
+
+</div>
+
+
+<h3>
+
+Innovation Day
+
+</h3>
+
+
+<p>
+
+<b>Date:</b> 5 August 2026
+
+<br>
+
+<b>Time:</b> 12:00 PM
+
+<br>
+
+<b>Location:</b> Innovation Center
+
+<br>
+
+<b>Organizer:</b> Innovation Club
+
+</p>
+
+
+<button>
+
+Register
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<div class="icon">
+
+🔐
+
+</div>
+
+
+<h3>
+
+Cyber Security Seminar
+
+</h3>
+
+
+<p>
+
+<b>Date:</b> 12 August 2026
+
+<br>
+
+<b>Time:</b> 1:00 PM
+
+<br>
+
+<b>Location:</b> IT Hall
+
+<br>
+
+<b>Organizer:</b> Cyber Club
+
+</p>
+
+
+<button>
+
+Register
+
+</button>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+© 2026 UniHub | University Student Platform
+
+</footer>
+
+
+
+
+</body>
+
+</html>

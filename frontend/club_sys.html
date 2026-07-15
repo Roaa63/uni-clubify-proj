@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UniHub | Login</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+min-height:100vh;
+}
+
+
+/* Navbar */
+
+header{
+
+height:70px;
+
+background:#1e3a8a;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:0 50px;
+
+color:white;
+
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+
+.logo{
+
+font-size:28px;
+
+font-weight:bold;
+
+}
+
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin-left:25px;
+
+font-size:17px;
+
+}
+
+
+nav a:hover{
+
+color:#ffd54f;
+
+}
+
+
+
+/* Login Area */
+
+
+.container{
+
+height:calc(100vh - 70px);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:
+
+linear-gradient(
+rgba(30,58,138,.75),
+rgba(30,58,138,.75)
+),
+
+url("https://maqar.com/wp-content/uploads/2018/01/362459755.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+
+
+/* Login Box */
+
+
+.login-box{
+
+width:380px;
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+
+.login-box img{
+
+width:110px;
+
+margin-bottom:20px;
+
+}
+
+
+h2{
+
+color:#1e3a8a;
+
+margin-bottom:25px;
+
+}
+
+
+
+/* Inputs */
+
+
+input{
+
+width:100%;
+
+padding:13px;
+
+margin-bottom:15px;
+
+border:1px solid #ccc;
+
+border-radius:10px;
+
+font-size:16px;
+
+}
+
+
+input:focus{
+
+outline:none;
+
+border-color:#1e3a8a;
+
+}
+
+
+
+/* Button */
+
+
+button{
+
+width:100%;
+
+padding:13px;
+
+border:none;
+
+border-radius:25px;
+
+background:#1e3a8a;
+
+color:white;
+
+font-size:17px;
+
+cursor:pointer;
+
+}
+
+
+button:hover{
+
+background:#14265c;
+
+}
+
+
+
+/* Info */
+
+
+.info{
+
+margin-top:20px;
+
+color:#555;
+
+font-size:14px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<div class="logo">
+
+UniHub
+
+</div>
+
+
+
+<nav>
+
+<a href="login.html">
+Login
+</a>
+
+
+<a href="home.html">
+Home
+</a>
+
+</nav>
+
+
+</header>
+
+
+
+<div class="container">
+
+
+<div class="login-box">
+
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Yarmouk_University_logo.png/500px-Yarmouk_University_logo.png"
+alt="Yarmouk University Logo">
+
+
+<h2>
+
+Student Login
+
+</h2>
+
+
+
+<form action="/login" method="POST">
+
+
+<input
+
+type="text"
+
+name="username"
+
+placeholder="Username / Student ID"
+
+required>
+
+
+<input
+
+type="password"
+
+name="password"
+
+placeholder="Password"
+
+required>
+
+
+<button type="submit">
+
+Login
+
+</button>
+
+
+</form>
+
+
+
+<div class="info">
+
+
+<p>
+Yarmouk University Student Platform
+</p>
+
+
+<p>
+UniHub © 2026
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+</body>
+
+</html>

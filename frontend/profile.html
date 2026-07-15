@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UniHub | Profile</title>
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+}
+
+
+header{
+
+height:70px;
+background:#1e3a8a;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:0 50px;
+color:white;
+
+}
+
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+
+}
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:25px;
+
+}
+
+
+.container{
+
+padding:40px 70px;
+
+}
+
+
+.profile-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+display:flex;
+
+align-items:center;
+
+gap:30px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+
+
+.avatar{
+
+width:120px;
+
+height:120px;
+
+border-radius:50%;
+
+background:#1e3a8a;
+
+color:white;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:50px;
+
+}
+
+
+
+.info h2{
+
+color:#1e3a8a;
+
+margin-bottom:15px;
+
+}
+
+
+.info p{
+
+margin:8px 0;
+
+color:#555;
+
+}
+
+
+
+.title{
+
+margin:40px 0 25px;
+
+color:#1e3a8a;
+
+}
+
+
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+
+.card h3{
+
+color:#1e3a8a;
+
+}
+
+
+
+button{
+
+margin-top:15px;
+
+padding:12px 25px;
+
+border:none;
+
+border-radius:20px;
+
+background:#1e3a8a;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+
+
+footer{
+
+background:#1e3a8a;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+margin-top:40px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+UniHub
+</div>
+
+
+<nav>
+
+<a href="home.html">Home</a>
+
+<a href="clubs.html">Clubs</a>
+
+<a href="events.html">Events</a>
+
+<a href="profile.html">Profile</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+<section class="container">
+
+
+<div class="profile-box">
+
+
+<div class="avatar">
+
+👤
+
+</div>
+
+
+
+<div class="info">
+
+
+<h2 id="studentName">
+Loading...
+</h2>
+
+
+<p>
+<b>Student ID:</b>
+<span id="studentId"></span>
+</p>
+
+
+<p>
+<b>Major:</b>
+<span id="major"></span>
+</p>
+
+
+<p>
+<b>University:</b>
+<span id="university"></span>
+</p>
+
+
+<p>
+<b>Email:</b>
+<span id="email"></span>
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<h2 class="title">
+My Clubs
+</h2>
+
+
+<div class="cards" id="clubs">
+
+</div>
+
+
+
+
+
+
+<h2 class="title">
+My Registered Events
+</h2>
+
+
+<div class="cards" id="events">
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+<footer>
+
+© 2026 UniHub | University Student Platform
+
+</footer>
+
+
+
+
+
+<script>
+
+
+// Get logged student data from backend
+
+fetch("http://localhost:5000/api/profile")
+
+.then(response=>response.json())
+
+.then(data=>{
+
+
+document.getElementById("studentName").innerHTML=data.name;
+
+document.getElementById("studentId").innerHTML=data.studentId;
+
+document.getElementById("major").innerHTML=data.major;
+
+document.getElementById("university").innerHTML=data.university;
+
+document.getElementById("email").innerHTML=data.email;
+
+
+
+// Student Clubs
+
+let clubs="";
+
+
+data.clubs.forEach(club=>{
+
+
+clubs += `
+
+<div class="card">
+
+<h3>${club.name}</h3>
+
+<p>
+
+Status: ${club.status}
+
+<br>
+
+Joined Date: ${club.joinDate}
+
+</p>
+
+
+</div>
+
+`;
+
+
+});
+
+
+document.getElementById("clubs").innerHTML=clubs;
+
+
+
+
+
+// Student Events
+
+
+let events="";
+
+
+data.events.forEach(event=>{
+
+
+events += `
+
+<div class="card">
+
+
+<h3>${event.name}</h3>
+
+
+<p>
+
+Date: ${event.date}
+
+<br>
+
+Time: ${event.time}
+
+<br>
+
+Status: ${event.status}
+
+</p>
+
+
+</div>
+
+`;
+
+
+});
+
+
+document.getElementById("events").innerHTML=events;
+
+
+
+})
+
+.catch(error=>{
+
+console.log(error);
+
+});
+
+
+
+</script>
+
+
+</body>
+
+</html>

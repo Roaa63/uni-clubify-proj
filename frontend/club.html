@@ -1,0 +1,885 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UniHub | Clubs</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+
+body{
+
+    background:#f5f7fb;
+    color:#222;
+
+}
+
+
+/* Navbar */
+
+header{
+
+    background:#1e3a8a;
+    height:70px;
+    padding:0 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    color:white;
+
+}
+
+
+.logo{
+
+    font-size:28px;
+    font-weight:bold;
+
+}
+
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:17px;
+
+}
+
+
+nav a:hover{
+
+    color:#ffd54f;
+
+}
+
+
+
+/* Back Home Button */
+
+.back-home{
+
+    padding:25px 60px;
+
+}
+
+
+.back-home a{
+
+    background:#1e3a8a;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:10px 20px;
+
+    border-radius:20px;
+
+    font-size:15px;
+
+}
+
+
+.back-home a:hover{
+
+    background:#14265c;
+
+}
+
+
+
+/* Hero */
+
+.hero{
+
+    height:280px;
+
+    background:
+    linear-gradient(
+    rgba(30,58,138,.8),
+    rgba(30,58,138,.8)
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.hero h1{
+
+    font-size:45px;
+
+}
+
+
+
+.hero p{
+
+    margin-top:10px;
+
+    font-size:18px;
+
+}
+
+
+
+
+/* Clubs */
+
+.container{
+
+    padding:50px 70px;
+
+}
+
+
+.title{
+
+    text-align:center;
+
+    color:#1e3a8a;
+
+    font-size:32px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+
+.card{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.card img{
+
+    width:100%;
+
+    height:170px;
+
+    object-fit:cover;
+
+}
+
+
+
+
+.card-content{
+
+    padding:20px;
+
+}
+
+
+
+
+.card h3{
+
+    color:#1e3a8a;
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+.card p{
+
+    color:#555;
+
+    line-height:1.6;
+
+}
+
+
+
+
+button{
+
+    margin-top:15px;
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:#1e3a8a;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+
+button:hover{
+
+    background:#14265c;
+
+}
+
+
+
+
+
+/* Popup */
+
+.popup{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.6);
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.popup-box{
+
+    background:white;
+
+    width:400px;
+
+    padding:30px;
+
+    border-radius:15px;
+
+}
+
+
+
+.popup-box h2{
+
+    color:#1e3a8a;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.popup-box p{
+
+    line-height:1.8;
+
+}
+
+
+
+.close{
+
+    float:right;
+
+    cursor:pointer;
+
+    font-size:25px;
+
+    color:#1e3a8a;
+
+}
+
+
+
+
+/* Footer */
+
+
+footer{
+
+    background:#1e3a8a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<header>
+
+
+<div class="logo">
+
+UniHub
+
+</div>
+
+
+
+<nav>
+
+<a href="home.html">Home</a>
+
+<a href="clubs.html">Clubs</a>
+
+<a href="events.html">Events</a>
+
+<a href="profile.html">Profile</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+<div class="back-home">
+
+<a href="home.html">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Back to Home
+
+</a>
+
+</div>
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+
+<h1>
+University Clubs
+</h1>
+
+
+<p>
+Discover clubs and join activities that match your interests
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+<section class="container">
+
+
+<h2 class="title">
+
+Explore Clubs
+
+</h2>
+
+
+
+<div class="cards">
+<!-- AI Club -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+
+<div class="card-content">
+
+<h3>
+AI & Programming Club
+</h3>
+
+<p>
+Learn Artificial Intelligence, programming skills and technology projects.
+</p>
+
+<button onclick="showClub('AI')">
+Join Club
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- Innovation Club -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
+
+<div class="card-content">
+
+<h3>
+Innovation Club
+</h3>
+
+<p>
+Develop creative ideas and entrepreneurship skills.
+</p>
+
+<button onclick="showClub('Innovation')">
+Join Club
+</button>
+
+</div>
+
+</div>
+
+
+
+
+<!-- Volunteer Club -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655">
+
+<div class="card-content">
+
+<h3>
+Volunteer Club
+</h3>
+
+<p>
+Participate in community service activities.
+</p>
+
+<button onclick="showClub('Volunteer')">
+Join Club
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Business Club -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72">
+
+<div class="card-content">
+
+<h3>
+Business Club
+</h3>
+
+<p>
+Learn leadership and business management skills.
+</p>
+
+<button onclick="showClub('Business')">
+Join Club
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Cyber Security Club -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3">
+
+<div class="card-content">
+
+<h3>
+Cyber Security Club
+</h3>
+
+<p>
+Learn cybersecurity concepts and network protection.
+</p>
+
+<button onclick="showClub('Cyber')">
+Join Club
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Robotics Club -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e">
+
+<div class="card-content">
+
+<h3>
+Robotics Club
+</h3>
+
+<p>
+Explore robotics, automation and smart systems.
+</p>
+
+<button onclick="showClub('Robotics')">
+Join Club
+</button>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+<!-- Popup -->
+
+<div class="popup" id="popup">
+
+
+<div class="popup-box">
+
+
+<span class="close" onclick="closePopup()">
+
+×
+
+</span>
+
+
+<h2 id="clubTitle"></h2>
+
+
+<p id="clubDetails"></p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<footer>
+
+© 2026 UniHub | University Student Platform
+
+</footer>
+
+
+
+
+
+<script>
+
+
+function showClub(type){
+
+
+let title="";
+let details="";
+
+
+
+if(type=="AI"){
+
+
+title="AI & Programming Club";
+
+
+details=`
+
+<b>Registration:</b> 1 September 2026 - 15 September 2026<br>
+
+<b>Meeting Days:</b> Sunday & Tuesday<br>
+
+<b>Time:</b> 2:00 PM - 4:00 PM<br>
+
+<b>Location:</b> Computer Lab 3<br>
+
+<b>Supervisor:</b> Dr. Ahmad Khalil<br>
+
+<b>Members:</b> 120 Students<br><br>
+
+Learn Artificial Intelligence and programming skills.
+
+`;
+
+}
+
+
+
+else if(type=="Innovation"){
+
+
+title="Innovation Club";
+
+
+details=`
+
+<b>Registration:</b> 5 September 2026 - 20 September 2026<br>
+
+<b>Meeting Days:</b> Monday & Wednesday<br>
+
+<b>Time:</b> 1:00 PM - 3:00 PM<br>
+
+<b>Location:</b> Innovation Center<br>
+
+<b>Supervisor:</b> Dr. Sara Ali<br>
+
+<b>Members:</b> 85 Students<br><br>
+
+Create innovative ideas and student projects.
+
+`;
+
+}
+
+
+
+else if(type=="Volunteer"){
+
+
+title="Volunteer Club";
+
+
+details=`
+
+<b>Registration:</b> 10 September 2026 - 25 September 2026<br>
+
+<b>Meeting Days:</b> Thursday<br>
+
+<b>Time:</b> 12:00 PM - 2:00 PM<br>
+
+<b>Location:</b> Student Activities Building<br>
+
+<b>Supervisor:</b> Mr. Omar Hassan<br>
+
+<b>Members:</b> 150 Students<br><br>
+
+Join social and community activities.
+
+`;
+
+}
+
+
+
+else if(type=="Business"){
+
+
+title="Business Club";
+
+
+details=`
+
+<b>Registration:</b> 15 September 2026 - 30 September 2026<br>
+
+<b>Meeting Days:</b> Sunday & Wednesday<br>
+
+<b>Time:</b> 3:00 PM - 5:00 PM<br>
+
+<b>Location:</b> Business Faculty Hall<br>
+
+<b>Supervisor:</b> Dr. Lina Mahmoud<br>
+
+<b>Members:</b> 95 Students<br><br>
+
+Develop leadership and management skills.
+
+`;
+
+}
+
+
+
+else if(type=="Cyber"){
+
+
+title="Cyber Security Club";
+
+
+details=`
+
+<b>Registration:</b> 20 September 2026 - 5 October 2026<br>
+
+<b>Meeting Days:</b> Monday & Thursday<br>
+
+<b>Time:</b> 2:00 PM - 4:00 PM<br>
+
+<b>Location:</b> IT Building Lab<br>
+
+<b>Supervisor:</b> Dr. Khaled Ahmad<br>
+
+<b>Members:</b> 100 Students<br><br>
+
+Learn cybersecurity and ethical hacking basics.
+
+`;
+
+}
+
+
+
+else{
+
+
+title="Robotics Club";
+
+
+details=`
+
+<b>Registration:</b> 25 September 2026 - 10 October 2026<br>
+
+<b>Meeting Days:</b> Tuesday & Thursday<br>
+
+<b>Time:</b> 1:00 PM - 3:00 PM<br>
+
+<b>Location:</b> Engineering Lab<br>
+
+<b>Supervisor:</b> Dr. Mohammad Ali<br>
+
+<b>Members:</b> 75 Students<br><br>
+
+Build robots and learn automation technologies.
+
+`;
+
+}
+
+
+
+document.getElementById("clubTitle").innerHTML=title;
+
+document.getElementById("clubDetails").innerHTML=details;
+
+document.getElementById("popup").style.display="flex";
+
+
+}
+
+
+
+function closePopup(){
+
+document.getElementById("popup").style.display="none";
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
