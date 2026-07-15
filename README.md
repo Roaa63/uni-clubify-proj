@@ -57,4 +57,4 @@ This project was developed for educational purposes.
 ## click here to open our project
 ## Repository
 
-[View the Project on GitHub](https://github.com/RamaAlshaikhYousef/UniHub)
+[View the Project on GitHub](https://github.com/RamaAlshaikhYousef/uni-clubify-proj)
