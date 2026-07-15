@@ -55,6 +55,5 @@ The main goal of UniHub is to encourage students to engage in university life by
 ## License
 This project was developed for educational purposes.
 ## click here to open our project
-## Repository
 
 [View the Project on GitHub](https://github.com/Roaa63/uni-clubify-proj)
