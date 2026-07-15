@@ -38,8 +38,8 @@ The main goal of UniHub is to encourage students to engage in university life by
 ```
 
 
-## <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/4e941c94-cea0-4421-b07f-668f28f0269c"
-     />Team Members
+
+## ![image](src="https://github.com/user-attachments/assets/4e941c94-cea0-4421-b07f-668f28f0269c") Team MembersTeam Members
 - Rama Alshaikh_Yousef
 - Roaa Aljundi
 - Mayar Tashatshah
