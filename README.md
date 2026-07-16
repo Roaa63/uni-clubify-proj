@@ -15,7 +15,7 @@ UniHub is a web-based platform designed to help university students discover clu
 
 
 <h2> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8Jrqj5OKDwE45X772py9Q6h3VMZ4L1WP4xxvvNYtZw&s=10" width="50">Technologies Used</h2>
-##
+## Technologies is:
 - HTML5
 - CSS3
 - JavaScript
