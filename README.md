@@ -1,4 +1,4 @@
-# University club
+
 # UniHub
 
 ## Project Overview
